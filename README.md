@@ -43,3 +43,15 @@ This project focuses on the identification of medicinal plants using deep learni
 - **Second Model**: MobileNet-based CNN for better performance.
 - **Frontend**: Built using HTML, CSS, JavaScript, and Bootstrap.
 - **Backend**: Powered by Django, with models deployed to process plant identification.
+
+
+![p_home](https://github.com/user-attachments/assets/546f0140-8675-4453-8fd5-f3ca5388d365)
+___________________________________Home_page______________________________________________
+![p_model](https://github.com/user-attachments/assets/2d165e2e-abbf-44cd-819a-386687425dcc)
+___________________________________Model_page______________________________________________
+![p_blog](https://github.com/user-attachments/assets/dbbf0f4e-407e-49e5-8644-1145e43ff748)
+___________________________________Blog_page______________________________________________
+
+
+
+

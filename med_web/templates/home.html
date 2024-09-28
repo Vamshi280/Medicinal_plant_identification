@@ -1,0 +1,334 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"  href="{% static 'styles.css' %}">
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg "   data-bs-theme="light">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="#"style="font-family: cursive;
+          font-style: italic; ">PATRAM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#predict-section">Predict</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#leaf">leaf</a>
+          </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#aur">Aurevedic</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      {% comment %} carousel {% endcomment %}
+      <div class="container-fluid  px-0">
+        <!-- Carousel Section -->
+        {% comment %} Carousel {% endcomment %}
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'img/2680901.jpg' %}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/img2.webp' %}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item ">
+                <img src="{% static 'img/img13.jpg' %}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </div>
+    {% comment %} introduction {% endcomment %}
+    <section id="founders">
+      <div class="container">
+          <!-- Main agenda and slogan -->
+          <div class="row">
+              <div class="col-lg-6">
+                  <p></p><h3>Welcome to Patram,</h3><br> <b>Patram</b> is  ultimate destination for identifying and learning about medicinal plants through their leaves. Our platform leverages cutting-edge deep learning and image processing technologies to analyze uploaded images of leaves, providing accurate identification of various medicinal plant species. By simply uploading a photo of a leaf, our advanced model processes the image and predicts the plant species, offering detailed insights into its medicinal properties and potential uses. 
+                  <br>
+                  <br>
+                  <h3>"Discover the power of nature's remedies, leaf by leaf, with Patram"</h3>
+                  <br>
+                  At Patram, we believe in the power of nature and its potential to enhance our well-being. Our mission is to empower individuals, researchers, and enthusiasts with the tools to identify and understand the benefits of medicinal plants. Whether you are a student, a researcher, or someone interested in herbal medicine, Patram provides a user-friendly platform to explore the rich diversity of medicinal flora. Join us on this journey to discover the healing power of nature, one leaf at a time
+                  <p></p>
+  
+
+
+              </div>
+              <!-- Founder images -->
+              <div class="col-lg-6 text-end">
+                  <div class="row">
+
+                      <div class="col-md-6">
+                          <div class="founder">
+                              <img src="/static/img/img25.jpg" alt="Founder 4" class="img-fluid  fun">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+  </section>
+
+    
+ 
+
+    {% comment %} plant section {% endcomment %}
+    <div class="row mb-2" id="leaf">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Karnataka</strong>
+            <h3 class="mb-0">BAYLEAF</h3>
+            <br>
+            <p class="card-text mb-auto">Bay leaves, a fragrant culinary herb, are renowned not just for their distinctive flavor but also for their array of health benefits. </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+              <img src="/static/img/bayleaf.jpg" class="bd-placeholder-img" width="200" height="250" role="img" aria-label="Pashmina Shawls" alt="Pashmina Shawls">
+  
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Himalayan regions</strong>
+              <h3 class="mb-0">SARPGANDHA</h3>
+              <br>
+              <p class="mb-auto">Also known as black snakeroot or Indian snakeroot and devil pepper, it is an evergreen plant which has been in use for 4000 years in Ayurveda. An erect under-shrub, it is a species of flowering plant known for its medicinal properties.
+              <a href="#" class="stretched-link">Continue reading</a>
+          </p></div>
+          <div class="col-auto d-none d-lg-block">
+              <img src="/static/img/sarpa.jpg" class="bd-placeholder-img" width="200" height="250" role="img" aria-label="Pashmina Shawls" alt="Pashmina Shawls">
+  
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Uttar Pradesh </strong>
+              <h3 class="mb-0">SANJEEVANI</h3>
+              <br>
+              <p class="mb-auto">The Sanjeevani plant, scientifically known as Selaginella bryopteris, is a small perennial herb belonging to the Selaginellaceae family. It is native to the Indian subcontinent, particularly the Himalayan region.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/static/img/sanj.jpg" class="bd-placeholder-img" width="200" height="250" role="img" aria-label="Pashmina Shawls" alt="Pashmina Shawls">
+    
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Madhya Pradesh </strong>
+              <h3 class="mb-0">Ashwagandha</h3>
+              <br>
+              <p class="mb-auto">For hundreds of years, people have used the roots and orange-red fruit of ashwagandha for medicinal purposes. The herb is also known as Indian ginseng or winter cherry. The name “ashwagandha” describes the smell of its root, meaning “like a horse.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/static/img/aswa.webp" class="bd-placeholder-img" width="200" height="250" role="img" aria-label="Pashmina Shawls" alt="Pashmina Shawls">
+    
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Karnataka</strong>
+              <h3 class="mb-0">Amrutha Balli</h3>
+              <br>
+              <p class="mb-auto">Medicinal uses: ‘Amrutha’ is an anti-aging herb. According to a legend, the herb is an “heavenly elixir” and kept the angels eternally young. </p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/static/img/amru.webp" class="bd-placeholder-img" width="200" height="250" role="img" aria-label="Pashmina Shawls" alt="Pashmina Shawls">
+    
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">INDIA</strong>
+              <h3 class="mb-0"> TULSI</h3>
+              <br>
+              <p class="mb-auto">Holy Basil Contains Vitamin C And Antioxidants Such As Eugenol, Which Protects The Heart From The Harmful Effects Of Free Radicals. Eugenol Also Proves Useful In Reducing Cholesterol Levels In The Blood..</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/static/img/tulsi.jpg" class="bd-placeholder-img" width="200" height="250" role="img" aria-label="Pashmina Shawls" alt="Pashmina Shawls">
+    
+            </div>
+          </div>
+        </div>    
+    </div>
+    {% comment %} model_section  {% endcomment %}
+    {% comment %} model section {% endcomment %}
+    <div class="upload-section" id="predict-section">
+      <form method="POST" enctype="multipart/form-data" action="{% url 'predict' %}">
+        {% csrf_token %}
+        <label for="image">Upload an image:</label>
+        <div class="strip"></div>
+        <p id="model_p">Our medicinal leaf identification model utilizes advanced deep learning techniques to analyze uploaded images of leaves. By leveraging convolutional neural networks (CNNs), the model can accurately classify medicinal plant species based on distinct leaf features. Upon uploading an image, our model processes it to predict the plant species, providing users with valuable information about the medicinal properties and uses associated with identified plants.</p>
+        <br>
+        <input type="file" name="image" id="image" required>
+        <button type="submit">Predict</button>
+        
+    </form>
+    
+    {% if prediction %}
+    <div class="result">
+        <h5>Prediction Result:</h5>
+        <h2>{{ prediction }}</h2>
+        <img src="{{ uploaded_file_url }}" alt="Uploaded Image" class="uploaded-image" style="height: 250px; width: 250px;">
+    </div>
+    {% endif %}
+</div>
+
+{% comment %} header part {% endcomment %}
+<div class="p-4 p-md-5 mb-4 text-white rounded bg-cl" style="
+background-color: rgb(0, 40, 40, 0.9); margin-top:20px;">
+  <div class="col-md-6 px-0">
+    <h1 class="display-4 fst-italic"></h1>
+    <h2 class="fw-bold">Unveiling the Secrets of Medicinal Plants: Nature's Healing Power</h2>
+    <p class="lead my-3">"Medicinal plants are the cornerstone of traditional medicine, offering natural remedies that have been cherished for centuries. Discover their healing properties and the science behind their benefits."</p>
+    <p class="lead mb-0"><a href="#" class="text-white fw-bold">Learn more about medicinal plants...</a></p>
+    
+    
+  </div>
+</div>
+{% comment %} header part {% endcomment %}
+
+
+    {% comment %} fact section  {% endcomment %}
+    <div class="fact" id="aur">
+      <div class="fact-info">
+          <h2 class="fact-title">Ayurveda</h2>
+          <p class="fact-description">Ayurveda is considered by many scholars to be the oldest healing science. In Sanskrit, Ayurveda means “The Science of Life.” Ayurvedic knowledge originated in India more than 5,000 years ago and is often called the “Mother of All Healing.” It stems from the ancient Vedic culture and was taught for many thousands of years in an oral tradition from accomplished masters to their disciples. Some of this knowledge was set to print a few thousand years ago, but much of it is inaccessible. The principles of many of the natural healing systems now familiar in the West have their roots in Ayurveda, including Homeopathy and Polarity Therapy.</p>
+      </div>
+      <img src="{% static 'img/ayrv.jpg' %}" alt="Fact Image" class="fact-image">
+  </div>
+  
+  <div class="fact">
+      <img src="{% static 'img/herbal.webp' %}" alt="Fact Image" class="fact-image">
+      <div class="fact-info">
+          <h2 class="fact-title">Herbal medicine </h2>
+          <p class="fact-description">Herbal medicine (also called herbalism, phytomedicine or phytotherapy) is the study of pharmacognosy and the use of medicinal plants, which are a basis of traditional medicine. With worldwide research into pharmacology, some herbal medicines have been translated into modern remedies, such as the anti-malarial group of drugs called artemisinin isolated from Artemisia annua, a herb that was known in Chinese medicine to treat fever. There is limited scientific evidence for the safety and efficacy of many plants used in 21st-century herbalism, which generally does not provide standards for purity or dosage.</p>
+      </div>
+  </div>
+  
+  <div class="fact">
+      <div class="fact-info">
+          <h2 class="fact-title">Scientific Research and Discoveries:</h2>
+          <p class="fact-description">Ten percent of all vascular plants are used as medicinal plants [1], and there are estimated to be between 350,000 [2] and almost half a million [3] species of them. Since ancient times, plants have been used in medicine and are still used today [4]. In the beginning, the trial and error method was used to treat illnesses or even simply to feel better, and in this way, to distinguish useful plants with beneficial effects [5]. The use of these plants has been gradually refined over the generations, and this has become known in many contexts as traditional medicine. The official definition of traditional medicine can be considered as “the sum total of the knowledge, skills and practices based on the theories, beliefs and experiences indigenous to different cultures, whether explicable or not, used in the maintenance of health, as well as in the prevention, diagnosis, improvement or treatment of physical and mental illnesses” [6].Ten percent of all vascular plants are used as medicinal plants [1], and there are estimated to be between 350,000 [2] and almost half a million [3] species of them. Since ancient times, plants have been used in medicine and are still used today [4]. In the beginning, the trial and error method was used to treat illnesses or even simply to feel better, and in this way, to distinguish useful plants with beneficial effects [5]. The use of these plants has been gradually refined over the generations, and this has become known in many contexts as traditional medicine.</p>
+      </div>
+      <img src="{% static 'img/science.jpg' %}" alt="Fact Image" class="fact-image">
+  </div>
+  
+  <div class="fact">
+      <img src="{% static 'img/garden.jpg' %}" alt="Fact Image" class="fact-image">
+      <div class="fact-info">
+          <h2 class="fact-title">Gardening and Cultivation Tips</h2>
+          <p class="fact-description">Welcome to our Gardening and Cultivation Tips section, where we share expert advice on growing your own medicinal plants at home. Whether you're a seasoned gardener or just starting out, this section offers valuable insights to help you cultivate a thriving herbal garden. Learn about the ideal soil types, watering schedules, and sunlight requirements for various medicinal plants. Discover tips on organic pest control, companion planting, and sustainable gardening practices to ensure a healthy and bountiful harvest. We also provide step-by-step guides on planting seeds, propagating cuttings, and caring for mature plants. From selecting the right pots for indoor gardening to creating a flourishing outdoor herb garden, our tips cover it all. Join us on this green journey and turn your garden into a sanctuary of healing plants with Patram.</p>
+      </div>
+  </div>
+{% comment %} footer  {% endcomment %}
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-4 offset-1">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of whats new and exciting from us.</p>
+          <div class="d-flex w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address" fdprocessedid="1ep78">
+            <button class="btn btn-primary" type="button" fdprocessedid="ixfq25">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between py-4 my-4 border-top">
+      <p>© 2021 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+{% comment %} footer ends {% endcomment %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
